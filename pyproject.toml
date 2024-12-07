@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "efficient_chess"
+version = "0.1.0"
+description = ""
+authors = ["Paul Calot"]
+
+# packages = [
+#     { include = "planned_vocal_interviewer", from = "src" },
+# ]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+python-dotenv = "*"
+tqdm = "*"
+kaggle-environments = "*"
+
+[tool.poetry.group.dev.dependencies]
+isort = "*"
+black = "*"
+pytest = "*"
+pytest-mock = "*"
+kaggle = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
